@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fondo{
+  background-color: rgb(50,50,50);
+  width: 100;
+  height:100vh;
+}
+.dor{
+  margin:auto;
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%, -50%);
+  width:max-content;
+}
+.dor__cabeza {
+  width:150px;
+  height: 130px;
+  background-color:rgb(0,120,250);
+  border-radius:50%;
+  border:1px solid black;
+  position:relative;
+}
+.dor__ojos{
+  width:max-content;
+  margin:auto;
+  margin-top:7px;
+  position:relative;
+}
+.dor__ojo{
+   border:1px solid black;
+   border-radius:50%;
+   background-color:white;
+   width:30px;
+   height:35px;
+   display:inline-block;
+   position:relative;
+}
+.dor__pupila{
+  background-color:black;
+  width:13px;
+  height:18px;
+  border-radius:50%;
+  position:absolute;
+  right:3px;
+  top:50%;
+  transform:translateY(-50%);
+}
+.dor__pupila:before{
+  content:'';
+  position:absolute;
+  width:5px;
+  height:5px;
+  background-color:white;
+  border-radius:50%;
+  right:20%;
+  top:50%;
+  transform:translateY(-50%);
+}
+.dor__pupila-der{
+  width:20px; height:100px;
+  border:2px solid black;
+  border-color:black transparent transparent transparent ;
+  border-radius:50%/90px 90px 0 0;
+  position:absolute;
+  margin-left:0px;
+  margin-top:40%;
+}
+.dor__nariz{
+   border:1px solid black;
+   border-radius:50%;
+   background-color:rgb(255,10,0);
+   width:25px;
+   height:25px;
+   position:absolute;
+   top:25px;
+   left:50%;
+   transform:translateX(-50%);
+}
+.dor__nariz-bolita{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background-color:white;
+  margin-left:30%;
+  margin-top:50%;
+  transform:translateY(-90%);
+  position:relative;
+  z-index:1;
+}
+.dor__linea{
+  background-color:black;
+  width:1px;
+  height:45px;
+  margin:auto;
+  position:relative;
+  margin-top:5px;
+}
+.dor__boca{
+  width:140px;
+  height:170px;
+  border:1px solid black;
+  border-color:transparent transparent black transparent;
+  border-radius:50%;
+  position:absolute;
+  bottom:25px;
+  left:50%;
+  transform:translateX(-50%);
+}
+.dor__white{
+  width:130px;
+  height: 105px;
+  background-color:white;
+  border-radius:50%;
+  border:1px solid black;
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:0;
+}
+.dor__bigote-linea{
+  width:40px;
+  margin-bottom:8px;
+  height:1px;
+  border:1px solid black;
+  border-color:black transparent transparent transparent;
+}
+.dor__bigote{
+  display:flex;
+  justify-content:space-between;
+  width:90%;
+  margin:auto;
+}
+.dor__bigote-iz, .dor__bigote-der{
+  display:inline-block;
+}
+.dor__bigote{
+  margin-top:40px;
+}
+.linea-1{
+  transform:rotate(-10deg);
+}
+.linea-2{
+  transform:rotate(10deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="fondo">
+        <div class="dor">
+            <div class="dor__cabeza">
+            <div class="dor__white">
+              <div class="dor__boca"></div>
+              <div class="dor__bigote">
+                <div class="dor__bigote-iz">
+                  <div class="dor__bigote-linea linea-2"></div>
+                  <div class="dor__bigote-linea"></div>
+                  <div class="dor__bigote-linea linea-1"></div>
+                </div>
+                <div class="dor__bigote-der">
+                  <div class="dor__bigote-linea linea-1"></div>
+                  <div class="dor__bigote-linea"></div>
+                  <div class="dor__bigote-linea linea-2"></div>
+                </div>
+              </div>
+            </div>
+              <div class="dor__ojos">
+                <div class="dor__ojo">
+                  <div class="dor__pupila"></div>
+                </div><div class="dor__ojo">
+                  <div class="dor__pupila-der"></div>
+                </div>
+                <div class="dor__nariz">
+                  <div class="dor__nariz-bolita"></div>
+                  <div class="dor__linea">
+                    
+                  </div>
+                  
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
